@@ -8,53 +8,54 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
-    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
 </head>
 
 <body>
     <div class="site-wrapper">
-        <form class="question">
-            <h2 class="question-heading">
-                Quiz name
-            </h2>
-
-            <div class="question-description">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta saepe minima dolorum facere maxime ea,
-                fugiat, vitae officiis expedita est id commodi soluta nemo fugit itaque earum. Eos eveniet ex cupiditate
-                repudiandae quos pariatur delectus quisquam, nesciunt corporis atque, odit, eius blanditiis. Asperiores
-                quas excepturi accusamus est quibusdam facere ipsam omnis architecto incidunt sed. Magnam, harum? Rerum
-                cumque delectus cum nobis optio! Ducimus explicabo perspiciatis unde error! Aliquid distinctio neque
-                molestiae harum labore fugiat facilis commodi earum tempora accusamus tempore illo beatae aut at
-                deserunt corporis accusantium cumque, magni, ipsam doloremque ipsum voluptatibus impedit ab iure!
-                Quibusdam doloremque atque voluptate eos facilis sint incidunt expedita quasi sit provident, sapiente
-                aliquid aut pariatur modi aperiam, neque, vero culpa ad reiciendis ut nulla accusantium inventore. Ex
-                commodi aperiam deserunt ipsam illo saepe, sint fuga cupiditate maiores blanditiis cum excepturi facilis
-                asperiores totam porro dolorum repudiandae iure quae optio eius numquam pariatur est laborum?
-                Doloremque, praesentium officiis vitae recusandae perferendis neque voluptatibus dicta, exercitationem
-                ea provident, esse ipsam laboriosam itaque at ducimus voluptate nostrum. Id, sapiente expedita
-                perspiciatis cupiditate neque quas voluptas a debitis eos, placeat illo quo officiis earum voluptatibus
-                esse animi maiores autem doloremque commodi inventore ullam illum? Ipsum, unde dolor?
+        <div class="header-wrapper">
+            <div class="header-content">
+                <img src="./assets/images/blue-square.svg" class="square-icon">
+                <h1>
+                    Portal quiz: Lorem ipsum dolor sit amet consectetur.
+                </h1>
             </div>
+            <button type="button" class="help-button">Help</button>
+        </div>
 
-            <div class="question-control">
-                <input autofocus type="text" class="form-control" placeholder="Your answer" required>
-            </div>
-
-            <progress max="100" value="60" class="progress-bar"></progress>
-
-            <div class="question-footer">
-                <div class="question-counter">
-                    Question №6/10
+        <div class="content">
+            <div class="question-area">
+                <div class="question-heading">
+                    <img src="./assets/images/blue-square.svg" class="square-icon">
+                    Question №5
                 </div>
 
-                <div class="actions">
-                    <button type="button" class="button-previous">Previous</button>
-                    <button type="submit" class="button-next">Next</button>
+                <div class="question-description">
+                    Is cake a lie? Is cake a lie? Is cake a lie? Is cake a lie? Is cake a lie? Is cake a lie? Is
+                    cake a lie? Is cake a lie? Is cake a lie? Is cake a lie? Is cake a lie? Is cake a lie? Is cake a
+                    lie? Is cake a lie? Is cake a lie? Is cake a lie? Is cake a lie? Is cake a lie? Is cake a lie? Is
+                    cake a lie? Is cake a lie? Is cake a lie? Is cake a lie? Is cake a lie? Is cake a lie?
+                </div>
+
+                <div class="question-image">
+                    <img src="./assets/images/cake.png" alt="cake" width="60%" height="60%">
                 </div>
             </div>
-        </form>
+
+            <div class="answer-area">
+                <div class="answer-heading">
+                    <img src="./assets/images/blue-square.svg" class="square-icon">
+                    Answer options
+                </div>
+
+                <div class="answer-tip-wrapper">
+                    <div class="answer-tip">
+                        <i>Choose one option</i>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
 </body>
 
 </html>

@@ -1,0 +1,28 @@
+.question-area {
+    flex: 1;
+    background-color: #fff;
+    margin-right: 20px;
+    border: 1px solid $main-color;
+}
+
+.question-heading {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    font-size: 18px;
+}
+
+.question-description {
+    line-height: 1.2;
+    font-size: 24px;
+    padding: 10px;
+}
+
+.question-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+@import "common";

@@ -1,0 +1,35 @@
+.header-wrapper {
+    display: flex;
+    padding: 10px;
+}
+
+.header-content {
+    flex: 1;
+    display: flex;
+    margin-right: 20px;
+    align-items: center;
+    height: 100%;
+    background-color: #fff;
+    border: 1px solid $main-color;
+}
+
+.help-button {
+    flex: 0 0 10em;
+    margin-left: auto;
+    background-color: $main-color;
+    text-align: center;
+    border-radius: 5px;
+    color : white;
+    border: none;
+    cursor: pointer;
+}
+
+.help-button:hover {
+    background-color: #000;
+}
+
+.help-button:focus {
+    border: 3px solid #0F0;
+}
+
+@import "common";
