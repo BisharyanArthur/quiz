@@ -5,9 +5,12 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.content {
+.main-form {
     display: flex;
-    justify-content: space-between;
-    min-height: 70vh;
+    flex-direction: column;
     padding: 10px;
+}
+
+.main-form-content-wrapper {
+    display: flex;
 }

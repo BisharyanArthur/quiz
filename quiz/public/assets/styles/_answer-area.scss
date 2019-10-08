@@ -1,5 +1,6 @@
 .answer-area {
     flex: 1;
+    padding: 10px;
     background-color: #fff;
     border: 1px solid $main-color;
 }
@@ -7,23 +8,27 @@
 .answer-heading {
     display: flex;
     align-items: center;
-    padding-top: 10px;
     font-size: 18px;
 }
 
 .answer-tip-wrapper {
     display: flex;
-    justify-content: center;
     padding: 10px;
 }
 
 .answer-tip {
-    flex: 0.5;
+    width: 100%;
     padding: 10px;
     font-size: 24px;
-    background-color: rgba(220, 246, 167, 0.808);
+    font-style: italic;
+    background-color: $secondary-color;
+    color: rgb(63, 90, 13);
     box-shadow: 0 0 1px #0f0f0f;
     border-radius: 5px;
+}
+
+.answer-choises {
+    font-size: 24px;
 }
 
 @import "common";

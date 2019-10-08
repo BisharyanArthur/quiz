@@ -1,0 +1,17 @@
+.main-form-control {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.navigation-button {
+    flex: 0 0 5em;
+    background-color: $main-color;
+    text-align: center;
+    color : white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+@import "common";
