@@ -1,3 +1,4 @@
+// move variables into _variables.scss
 $main-color: #59bcf5;
 $secondary-color: rgba(220, 246, 167, 0.808);
 
@@ -11,6 +12,8 @@ $secondary-color: rgba(220, 246, 167, 0.808);
 $radio-bg-color: rgb(236, 236, 236);
 .radio {
     margin: 0.5rem;
+
+    // use class instead of tag!
     input[type="radio"] {
       position: absolute;
       opacity: 0;
@@ -31,7 +34,7 @@ $radio-bg-color: rgb(236, 236, 236);
           text-align: center;
           transition: all 250ms ease;
         }
-      }
+      } // br here
       &:checked {
         + .radio-label {
           &:before {
@@ -39,7 +42,7 @@ $radio-bg-color: rgb(236, 236, 236);
             box-shadow: inset 0 0 0 4px $radio-bg-color;
           }
         }
-      }
+      } // br here
       &:focus {
         + .radio-label {
           &:before {
@@ -47,7 +50,7 @@ $radio-bg-color: rgb(236, 236, 236);
             border-color: $main-color;
           }
         }
-      }
+      } // br here
       &:disabled {
         + .radio-label {
           &:before {
@@ -65,4 +68,5 @@ $radio-bg-color: rgb(236, 236, 236);
         }
       }
     }
+  // wrong format
   }
