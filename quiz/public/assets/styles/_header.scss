@@ -32,4 +32,7 @@
     border: 3px solid #0F0;
 }
 
+// wrong import
+// 1. it should be before other content in file
+// 2. you already have common styles in your style.scss, so this one will be same content in your ouput css file
 @import "common";

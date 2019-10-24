@@ -2,7 +2,7 @@
     flex: 1;
     background-color: #fff;
     margin-right: 20px;
-    border: 1px solid $main-color;
+    border: 1px solid $main-color; // should take from variables, not from _common.scss
 }
 
 .question-heading {
@@ -25,4 +25,7 @@
     padding: 10px;
 }
 
+// wrong import
+// 1. it should be before other content in file
+// 2. you already have common styles in your style.scss, so this one will be same content in your ouput css file
 @import "common";
