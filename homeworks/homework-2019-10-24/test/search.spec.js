@@ -1,4 +1,14 @@
 describe("search", function () {
+    // одинарные кавычки!
+    // зачем копипастить items?
+    // используй beforeEach фичу тогда, var items объяви на уровне этого describe
+
+    // item.tag == "tag1" давай через ===, я ж говорил это слабая сторона JS сравнение
+
+    // ещё я вижу копипасту по filterFn, sortFn, туда же в beforeEach
+    // соответственно ни один тест не проходит проверки на вызов без sort и filter фич
+
+    // в остальном тесты по делу
     it("should return all items with tag: 'tag1'", function () {
         var items = [{ "id": 1, "name": "Rand", "content": "in hac habitasse platea dictumst maecenas ut massa quis augue luctus tincidunt nulla mollis molestie", "tag": "tag1", "createdAt": "1/27/2019", "imageUrl": "http://dummyimage.com/227x177.png/dddddd/000000" },
         { "id": 2, "name": "Elisa", "content": "eget semper rutrum nulla nunc purus phasellus in felis donec semper sapien a", "tag": "asd", "createdAt": "7/31/2019", "imageUrl": "http://dummyimage.com/150x106.bmp/5fa2dd/ffffff" },
