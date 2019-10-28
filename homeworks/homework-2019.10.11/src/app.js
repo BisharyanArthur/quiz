@@ -10,6 +10,8 @@ function yesOrNo(value) {
     return value ? "Yes" : "No";
 }
 
+// typeof это оператор, а не функция, просто typeof number === 'number'
+// кавычки используются одинарные, у тебя двойные, не стоит привыкать так
 function isNonNegativeNumber(number) {
     return typeof (number) === "number" && !isNaN(number) && number !== Infinity && number >= 0;
 }
@@ -35,6 +37,9 @@ function isPositiveNumber(number) {
     return typeof (number) === "number" && !isNaN(number) && number !== Infinity && number > 0;
 }
 
+// константы скорее именнуются SECONDS_IN_YEAR, чтоб прям кричали,
+// ещё у тебя этот пример без бабеля, так что нельзя использовать const
+// это не работает везде
 const MilliSecondsInSeconds = 1000;
 const SecondsInYear = 3600 * 24 * 365;
 
