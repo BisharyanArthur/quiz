@@ -7,9 +7,9 @@ function deepClone(object) {
 }
 
 function shuffleArray(array) {
-    var shuffledArray = deepClone(array);
-    for (var currentId = array.length - 1; currentId > 0; currentId--) {
-        var otherId = getRandomIntFromRange(0, currentId);
+    let shuffledArray = deepClone(array);
+    for (let currentId = array.length - 1; currentId > 0; currentId--) {
+        let otherId = getRandomIntFromRange(0, currentId);
         [shuffledArray[currentId], shuffledArray[otherId]] = [shuffledArray[otherId], shuffledArray[currentId]];
     }
 
@@ -25,7 +25,7 @@ function getNextQuestion(questions) {
 }
 
 function askQuestion(question) {  
-    var answer = prompt(question.text);
+    let answer = prompt(question.text);
     return answer;
 }
 
@@ -38,21 +38,23 @@ function isTimerEnabled() {
 }
 
 function runQuiz(questions) {
-    var shuffledQuestions = shuffleArray(db);
-    var answeredCorrect = 0;
+    let shuffledQuestions = shuffleArray(questions);
+    let answeredCorrect = 0;
 
     while (hasNextQuestion(shuffledQuestions) && isTimerEnabled()) {
-        var question = getNextQuestion(shuffledQuestions);
-        var answer = askQuestion(question);        
+        let question = getNextQuestion(shuffledQuestions);
+        let answer = askQuestion(question);
         if (isAnswerCorrect(question, answer)) {
             answeredCorrect++;
         }
     }
 
-    console.info('Correct: ' + answeredCorrect + ' out of ' + db.length);
+    console.info('Correct: ' + answeredCorrect + ' out of ' + questions.length);
 }
 
-var db = [{"text":"aliquet pulvinar sed nisl nunc rhoncus dui vel sem sed sagittis nam congue risus semper porta volutpat quam pede lobortis","answer":"adapter"},
+runQuiz(db);
+
+let db = [{"text":"aliquet pulvinar sed nisl nunc rhoncus dui vel sem sed sagittis nam congue risus semper porta volutpat quam pede lobortis","answer":"adapter"},
 {"text":"viverra dapibus nulla suscipit ligula in lacus curabitur at ipsum ac tellus","answer":"multimedia"},
 {"text":"vestibulum quam sapien varius ut blandit non interdum in ante vestibulum ante ipsum primis","answer":"time-frame"},
 {"text":"dapibus augue vel accumsan tellus nisi eu orci mauris lacinia sapien quis libero nullam","answer":"solution"},
