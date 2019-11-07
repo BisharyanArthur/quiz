@@ -5,6 +5,8 @@
   "scripts": {
     "build:js": "babel src -d dist",
     "build:css": "sass ./assets/styles/style.scss dist/style.css",
+    "dev:js": "babel -w src -d dist",
+    "dev:css": "sass --watch ./assets/styles/style.scss dist/style.css",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node dist/app.js"
   },
