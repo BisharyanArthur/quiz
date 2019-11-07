@@ -29,7 +29,15 @@ function askQuestion(question) {
     return answer;
 }
 
+function isNonEmptyString(string) {
+    return string && string != "";
+}
+
 function isAnswerCorrect(question, answer) {
+    if (!isNonEmptyString) {
+        return false;
+    }
+
     return question.answer.toUpperCase() === answer.toUpperCase(); 
 }
 
@@ -38,6 +46,7 @@ function isTimerEnabled() {
 }
 
 function runQuiz(questions) {
+    console.info(questions);
     let shuffledQuestions = shuffleArray(questions);
     let answeredCorrect = 0;
 
@@ -49,10 +58,8 @@ function runQuiz(questions) {
         }
     }
 
-    console.info('Correct: ' + answeredCorrect + ' out of ' + questions.length);
+    alert('Correct: ' + answeredCorrect + ' out of ' + questions.length);
 }
-
-runQuiz(db);
 
 let db = [{"text":"aliquet pulvinar sed nisl nunc rhoncus dui vel sem sed sagittis nam congue risus semper porta volutpat quam pede lobortis","answer":"adapter"},
 {"text":"viverra dapibus nulla suscipit ligula in lacus curabitur at ipsum ac tellus","answer":"multimedia"},
@@ -64,3 +71,6 @@ let db = [{"text":"aliquet pulvinar sed nisl nunc rhoncus dui vel sem sed sagitt
 {"text":"mauris enim leo rhoncus sed vestibulum sit amet cursus id turpis integer aliquet massa id lobortis","answer":"global"},
 {"text":"risus auctor sed tristique in tempus sit amet sem fusce consequat nulla","answer":"focus group"},
 {"text":"in faucibus orci luctus et ultrices posuere cubilia curae mauris","answer":"context-sensitive"}];
+
+runQuiz(db);
+
